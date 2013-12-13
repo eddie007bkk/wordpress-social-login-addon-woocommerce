@@ -10,7 +10,7 @@ Adds PagSeguro gateway to the WooCommerce plugin
 
 ### Adds some functions to better advantage of the Woocommerce and Wordpress Social Login ###
 
--Facebook Login
+Facebook Login
 Use facebook data user to Woocommerce fields.
 First Name -> Billing First name
 Last Name -> Billing Last name
