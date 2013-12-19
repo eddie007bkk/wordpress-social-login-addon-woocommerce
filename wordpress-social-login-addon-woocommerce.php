@@ -77,3 +77,5 @@ function wslwoo_load() {
 	add_action( 'wsl_hook_process_login_before_redirect', 'check_wsl_wc_addon_facebook', 10, 3 );
 	
 }
+
+add_action( 'plugins_loaded', 'wslwoo_load', 0 );
