@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/lemoslincoln/wordpress-social-login-addon-woocommerce
  * Description: Adds some functions to better advantage of the Woocommerce and Wordpress Social Login.
  * Author: Lincoln Lemos
- * Author URI: htt://bigodesign.com.br
+ * Author URI: http://bigodesign.com.br
  * Version: 0.1
  * License: GPLv2 or later
  * Text Domain: wordpress-social-login-addon-woocommerce
@@ -41,7 +41,7 @@ function wslwoo_load() {
 	}
 
 	// Checks if Wordpress Social Login is installed.
-	if ( function_exists('wsl_activate') ) {
+	if ( ! function_exists('wsl_activate') ) {
 		add_action( 'admin_notices', 'wslwoo_wsl_fallback_notice' );
 
 	  return;
